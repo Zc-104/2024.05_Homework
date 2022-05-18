@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- 作业  -->
+<html>
+<head>
+    <title>作业</title>
+    <meta charset="utf-8">
+
+    <!-- 设置视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 基本的CSS -->
+    <link href="CSS/CSS基础.css" rel="stylesheet">
+
+    <!-- 导入时间_JS -->
+    <script src="JS/JS时间.js"></script>
+    <script src="JS/JS基础.js"></script>
+    <script type="text/javascript">
+        //折叠框
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                $(".panel").fadeToggle(1000);
+            });
+        });
+    </script>
+</head>
+<body onload="ShowTime()" size="500px">
+
+    <!-- 时间 -->
+    <div id="Time">
+        <h1><label id="show">JS ERROW</label></h1> 
+        <h1><label id="showtime">JS ERROW</label></h1> 
+    </div>
+    <!-- 标题 -->
+    <div id="Title">
+        <h2><b>自习要求：1.不讲话2.不抬头</b></h2>
+    </div>
+
+    <!-- 作业 -->
+    <div class="clearfix">
+        <form class="container">
+            <h2 style="color: red; text-align: center;" class="flip"><b>语文</b></h2>
+            <textarea class="panel"></textarea>
+        </form>
+
+        <form class="container">
+            <h2 style="color: red; text-align: center;" class="flip"><b>数学</b></h2>
+            <textarea class="panel"></textarea>
+        </form>
+
+        <form class="container">
+            <h2 style="color: red; text-align: center;" class="flip"><b>英语</b></h2>
+            <textarea class="panel"></textarea>
+        </form>
+    </div>
+</body>
+</html>

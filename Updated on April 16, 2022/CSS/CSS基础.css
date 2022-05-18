@@ -1,0 +1,68 @@
+#Time{
+    text-align:center;
+    width:auto;
+}
+#Title{
+    text-align:center;
+    width:auto;
+    color:#8B2323
+}
+.HomeWork{
+    color:red;                       
+}
+/* 文本框 */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 20px;
+  resize: none;
+  color: red;
+  text-align: center;
+}
+/* 折叠框 */
+textarea.panel,h2.flip{
+  line-height: 30px;
+  margin:auto;
+  font-size:26px;
+  padding:1px;
+  text-align:center;
+  background:white;
+  border:solid 1px white;
+  color: black;
+  border-radius:1px;
+  user-select:none;
+}
+textarea.panel{
+  text-align: center;
+  font-size: 26px;
+}
+h2.flip{
+  cursor:pointer;
+  text-align: center;
+  color: black;
+}
+/* 浮动 */
+* {
+  box-sizing: border-box;
+}
+/*** 设备断点 ***/
+.container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.example {
+  padding: 20px;
+  color: white;
+}
