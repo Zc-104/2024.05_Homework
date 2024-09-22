@@ -1,0 +1,63 @@
+body {
+    font: 400 15px Late, sans-serif;
+    line-height: 1.8;
+}
+
+.panel {
+    transition: box-shadow 0.5s;
+}
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+/* 文本框 */
+textarea {
+  width: 100%;
+  height: 160px;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  font-size: 30px;
+  resize: none;
+  color: black;
+  text-align: center;
+}
+
+/* 浮动 */
+* {
+  box-sizing: border-box;
+}
+/*** 设备断点 ***/
+.container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container.cen {
+  width: 300%;
+}
+
+.example {
+  padding: 20px;
+  color: white;
+}
+
+
+#Title{
+  text-align:center;
+  width:auto;
+  color:#8B2323;
+}
+.HomeWork{
+  color:red;                       
+}
+#Time{
+  text-align:center;
+}
